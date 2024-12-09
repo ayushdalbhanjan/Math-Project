@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime or Not</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+    body{
+        background-color:darkkhaki;
+        
+    }
+
+h1{
+color:rgba(52, 99, 8, 0.849);
+        text-shadow: 3px 3px 5px skyblue;
+        font-size: 50px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+}
+
+
+input{
+        color: darkolivegreen;
+        text-shadow: 3px 3px 5px skyblue;
+        height: 40px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .button-18 {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+</style>
+</head>
+<body>
+    <h1>Prime or Not</h1>
+    <input type="text" placeholder="Value" id="number">
+    <br>
+    <br>
+    <button class="button-18" onclick="primechecker()">Check</button>
+    <br>
+    <br>
+    <input type="text" placeholder="Answer" id="result">
+<script>
+ function primechecker() {
+    var number1 = parseInt($('#number').val()); // Ensures input is an integer
+    number=$('#numbervalue').val();
+        if ($("#number").val() === "") 
+        {
+            alert("Please fill in all the mandatory fields.");
+             return;               }
+        
+    if (number1 < 2) {
+        $('#result').val("This is not a prime number.");
+        return;
+    }
+    for (let i = 2; i <= Math.sqrt(number1); i++) {
+        if (number1 % i === 0) {
+            $('#result').val("This is not a prime number.");
+            return; // Exit immediately once a divisor is found
+        }
+    }
+    $('#result').val("This is a prime number.");
+}
+    </script>
+</body>
+</html>

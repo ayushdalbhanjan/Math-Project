@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color:darkkhaki;
+            
+        }
+
+marquee{
+    color:rgba(52, 99, 8, 0.849);
+            text-shadow: 3px 3px 5px skyblue;
+            font-size: 50px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+}
+
+
+h3{
+            color: darkolivegreen;
+            text-shadow: 3px 3px 5px skyblue;
+            font-size: 30px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <marquee>Triangle of Stars</marquee>
+    <script>
+    
+      document.write("<br>");
+     // star in each row  
+document.write("<h3>Right Triangle</h3>");
+        for(i=1;i<=5;i++){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write(j + " ");
+            }
+        }
+        document.write("<hr>");
+        
+        document.write("<h3>Right Triangle</h3>");
+        for(i=1;i<=5;i++){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write(i + " ");
+            }
+        }
+        document.write("<hr>");
+        document.write("<h3>Right Triangle</h3>");
+             // star in each row  
+
+        for(i=5;i>=1;i--){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write(j + " ");
+
+            }
+        }
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        
+        for(i=1;i<=5;i++){
+         document.write("<br>");
+            for(j=i;j<=5;j++){
+             document.write(i + " ");
+            }
+        }
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        for(i=1;i<=5;i++){
+         document.write("<br>");
+            for(j=5;j>=i;j--){
+             document.write(j + " ");
+
+            }
+        }
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        for(i=5;i>=1;i--){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write(i + " ");
+
+            }
+        }
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+        for(i=1;i<=4;i++){
+            
+         for(j=1;j<=i;j++){
+            var sum= 1; for (var i = 1; i <= 4; i++) { 
+                for (var j = 1; j <= i; j++)
+                { document.write(sum + " "); sum++; } document.write("<br>"); }
+         }
+        }
+        document.write("<br>");
+        
+        document.write("<hr>");
+
+        for(i=1;i<=3;i++){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write(j + " ");
+            }
+        }
+        for(i=4;i>=1;i--){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write(j + " ");
+            }
+        }
+        
+    </script>
+</body>
+</html>

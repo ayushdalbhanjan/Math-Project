@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color:darkkhaki;
+            
+        }
+
+h1{
+    color:rgba(52, 99, 8, 0.849);
+            text-shadow: 3px 3px 5px skyblue;
+            font-size: 50px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+}
+
+
+h3{
+            color: darkolivegreen;
+            text-shadow: 3px 3px 5px skyblue;
+            
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Triangle of Stars</h1>
+    <script>
+    //Four stars in each row   
+       for(i=1;i<=4;i++){
+         document.write("<br>");        
+            for(j=1;j<=4;j++){
+              document.write("* ");
+             }
+        }
+      document.write("<br>");
+     // star in each row  
+document.write("<h3>Right Triangle</h3>");
+        for(i=1;i<=4;i++){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write("* ");
+            }
+        }
+        
+        document.write("<br>");
+        document.write("<h3>Upside Down Right Triangle</h3>");
+        for(i=1;i<=4;i++){
+         document.write("<br>");
+            for(j=i;j<=4;j++){
+             document.write("* ");
+            }
+        }
+        document.write("<h3>Equilateral Triangle</h3>");
+        document.write("<br>");
+        //Equilateral triangle
+        for(i=1;i<=4;i++){
+         document.write("<br>");
+            for(j=1;j<=i;j++){
+             document.write("* ");
+            }
+        }
+
+         for(i=1;i<=4;i++){
+         document.write("<br>");
+            for(j=i;j<=4;j++){
+             document.write("* ");
+            }
+        }
+    </script>
+</body>
+</html>

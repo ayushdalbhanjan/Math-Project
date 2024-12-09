@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>The Greatest Number Among Two </title>
+    <style>
+
+
+/* CSS */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+body{
+            background-color:darkkhaki;
+            
+        }
+
+h1{
+    color:rgba(52, 99, 8, 0.849);
+            text-shadow: 3px 3px 5px skyblue;
+            font-size: 50px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+}
+
+
+input{
+            color: darkolivegreen;
+            text-shadow: 3px 3px 5px skyblue;
+            
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>    
+  <h1>Which Number is Greater?</h1>
+                <input type="text" placeholder="Value1" id="Value_1" name="val1" style=" color: firebrick; width: 200px; height: 50px;"><br/><br/>
+                          
+                <input type="text" placeholder="Value2" id="Value_2" name="val2" style=" color: firebrick; width: 200px; height: 50px;"><br/><br/>
+                
+                 <input type="text" placeholder="Result" id="result" name="result" style=" color: firebrick; width: 200px; height: 50px;"><br/><br/>
+                <button type="submit" class="button-87" onclick="Greater_Than()">></button>
+    <script>
+        function Greater_Than()
+        {
+
+          number=$('#numbervalue').val();
+        if ($("#Value_1").val() === "" || $("#Value_2").val() === "" ) 
+        {
+            alert("Please fill in all the mandatory fields.");
+             return;               }
+        
+        var number1=parseInt($('#Value_1').val()); 
+        var number2=parseInt($('#Value_2').val());
+        if(number1>number2)
+        {
+        $('#result').val("Value 1 is bigger : "+number1);
+          }
+        
+      else if(number2>number1)
+      {
+        $('#result').val("Value 2 is bigger : "+number2);
+         
+          
+      }
+       else 
+       $('#result').val("Value 1 and Value 2 are equal "); 
+      }
+      
+        
+        </script>
+   
+</body>
+</html>

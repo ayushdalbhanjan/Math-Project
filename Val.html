@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+
+
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #00d38d;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #ff74e1;
+  border-color: rgba(18, 207, 166, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+body{
+            background-color:darkkhaki;
+            
+        }
+
+h1{
+    color:rgba(52, 99, 8, 0.849);
+            text-shadow: 3px 3px 5px skyblue;
+            font-size: 50px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+}
+
+
+input{
+            color: darkolivegreen;
+            text-shadow: 3px 3px 5px skyblue;
+            
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+td{
+background-color: cornflowerblue;
+}
+</style>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    <center>
+      <input type="text" placeholder="Value" id="Value_1" name="val1" style=" color: firebrick; width: 200px; height: 50px;">
+        <br/>
+        <input type="text" placeholder="Value 2" id="Value_2" name="val2" style=" color: firebrick; width: 200px; height: 50px;"> 
+        <br/>
+        <input type="text" placeholder="Result" id="result" name="result" style=" color:firebrick; width: 200px; height: 50px;">
+                <table>
+                <tr>
+                    <td><button type="submit" class="button-6" onclick="Sum()">+</button></td>
+                    <td><button class="button-6" onclick="Difference()">-</button></td>
+                    <td><button class="button-6" onclick="Product()">x</button></td>
+                    <td><button class="button-6" onclick="Quotient()">/</button></td>
+                    <td><button class="button-6" onclick="Percent()">%</button></td>
+                    <td><button class="button-6" onclick="Exponent()">**</button></td>
+                </tr>
+            </table>  
+        <br/> 
+    </center>
+    <script>
+      function Sum()
+
+      
+      {
+        
+        var number1=$('#Value_1').val(); 
+        var number2=$('#Value_2').val();
+        if ($("#Value_1").val() === "" || $("#Value_2").val() === "") 
+        {
+alert("Please fill in the mandatory fields.");
+
+        }
+        var Sum = parseInt(number1) + parseInt(number2);
+          $('#result').val(Sum);
+          
+      
+      }
+
+      function Difference()
+      {
+       
+        var number1=$('#Value_1').val(); 
+        var number2=$('#Value_2').val();
+        if ($("#Value_1").val() === "" || $("#Value_2").val() === "") 
+        {
+alert("Please fill in the mandatory fields.");
+
+        }
+        var Sum = parseInt(number1) - parseInt(number2);
+          $('#result').val(Sum);
+          
+      
+      }
+
+      function Product()
+      {
+      
+        var number1=$('#Value_1').val(); 
+        var number2=$('#Value_2').val();
+        if ($("#Value_1").val() === "" || $("#Value_2").val() === "") 
+        {
+alert("Please fill in the mandatory fields.");
+
+        }
+        var Sum = parseInt(number1) * parseInt(number2);
+          $('#result').val(Sum);
+          
+      
+      }
+
+      function Quotient()
+      {
+       
+        var number1=$('#Value_1').val(); 
+        var number2=$('#Value_2').val();
+        if ($("#Value_1").val() === "" || $("#Value_2").val() === "") 
+        {
+alert("Please fill in the mandatory fields.");
+
+        }
+        var Sum = parseInt(number1) / parseInt(number2);
+          $('#result').val(Sum);
+          
+      
+      }
+
+      function Percent()
+      {
+       
+        var number1=$('#Value_1').val(); 
+        var number2=$('#Value_2').val();
+        if ($("#Value_1").val() === "" || $("#Value_2").val() === "") 
+        {
+alert("Please fill in the mandatory fields.");
+
+        }
+        var Sum = parseInt(number1) % parseInt(number2);
+          $('#result').val(Sum);
+          
+      
+      }
+      
+      function Exponent()
+      {
+       
+        var number1=$('#Value_1').val(); 
+        var number2=$('#Value_2').val();
+        if ($("#Value_1").val() === "" || $("#Value_2").val() === "") 
+        {
+alert("Please fill in the mandatory fields.");
+
+        }
+        var Sum = parseInt(number1) ** parseInt(number2);
+          $('#result').val(Sum);
+          
+      
+      }
+    </script>
+   
+</body>
+</html>
